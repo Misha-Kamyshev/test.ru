@@ -32,7 +32,7 @@
 		<div class="links">
 			<ul>
 				<div>
-					<li class="shop"> <a href="bron.php">БРОНИРОВАНИЕ</a> </li>
+					<li class="shop"> <a href="bron.html">БРОНИРОВАНИЕ</a> </li>
 					<li class="shop"> <a href="shop.php">ЦЕНЫ</a> </li>
 					<li> <a href="about.html">О НАС</a> </li>
 					<li> <a href="../index.html">ГЛАВНАЯ</a> </li>
@@ -50,7 +50,7 @@
 				<a href="../index.html">Главная</a>
 				<a href="about.html">О нас</a>
 				<a href="shop.php">Цены</a>
-				<a href="bron.php">Бронирование</a>
+				<a href="bron.html">Бронирование</a>
 			</div>
 		</div>
 	</header>
@@ -237,7 +237,7 @@
 					<li> <a href="../index.html">ГЛАВНАЯ</a> </li>
 					<li> <a href="about.html">О НАС</a> </li>
 					<li> <a href="shop.php">ЦЕНЫ</a> </li>
-					<li> <a href="bron.php" id="BRON">БРОНИРОВАНИЕ</a> </li>
+					<li> <a href="bron.html" id="BRON">БРОНИРОВАНИЕ</a> </li>
 				</ul>
 			</div>
 
