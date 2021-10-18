@@ -27,7 +27,17 @@ div.block_main {
 	}
 	div.block_left {
 		float: left;
-		width: 35%;
+		width: 40%;
+	}
+	.block_left h1 {
+		font-size: 20pt;
+		margin-bottom: 5px;
+		padding-left: 30px;
+	}
+	.block_left p {
+		font-size: 15pt;
+		margin: 0;
+		float: right;
 	}
 
 	div.block_right {
