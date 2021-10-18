@@ -1,11 +1,11 @@
 <?php
 	require_once '../php/connect.php';
 
-	$daichi = mysqli_query($BD, "SELECT * FROM `daichi`");
-	$axioma = mysqli_query($BD, "SELECT * FROM `axioma`");
-	$bosch  = mysqli_query($BD, "SELECT * FROM `bosch`");
-	$kentatsu = mysqli_query($BD, "SELECT * FROM `kentatsu`");
-	$midea  = mysqli_query($BD, "SELECT * FROM `midea`");
+	$daichi 	= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'daichi'");
+	$axioma 	= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'axioma'");
+	$bosch  	= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'bosch'");
+	$kentatsu = mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'kentatsu'");
+	$midea  	= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'midea'");
 
 ?>
 
