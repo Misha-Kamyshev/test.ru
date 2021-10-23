@@ -111,10 +111,13 @@
 							{
 								?>
 								<div class="product">
-	 								<a href="<?php echo $model_1['link'] ?>"> 
-	 									<img src="<?php echo $model_1['image'] ?>">
-										<h1><?php echo $model_1['name'] ?></h1>
-										<h2>Цена: <?php echo $model_1['price'] ?></h2>
+	 								<a href="<?php echo $model_1['link']; ?>"> 
+	 									<img src="<?php echo $model_1['image']; ?>">
+										<h1> <?php echo $model_1['name']; ?></h1>
+										<p class="specifications">Характеристики:<br /> </p>
+										<p class="padding"> <?php echo $model_1['description']; ?> </p> 
+										</p>
+										<h2>Цена: <?php echo $model_1['price']; ?></h2>
 									</a>
 								</div>
 								<?php 
