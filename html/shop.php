@@ -116,7 +116,6 @@
 										<h1> <?php echo $model_1['name']; ?></h1>
 										<p class="specifications">Характеристики:<br /> </p>
 										<p class="padding"> <?php echo $model_1['description']; ?> </p> 
-										</p>
 										<h2>Цена: <?php echo $model_1['price']; ?></h2>
 									</a>
 								</div>
@@ -142,6 +141,8 @@
 	 								<a href="<?php echo $model_2['link'] ?>"> 
 	 									<img src="<?php echo $model_2['image'] ?>">
 										<h1><?php echo $model_2['name'] ?></h1>
+										<p class="specifications">Характеристики:<br /> </p>
+										<p class="padding"> <?php echo $model_2['description']; ?> </p> 
 										<h2>Цена: <?php echo $model_2['price'] ?></h2>
 									</a>
 								</div>
@@ -167,6 +168,8 @@
 	 								<a href="<?php echo $model_4['link'] ?>"> 
 	 									<img src="<?php echo $model_4['image'] ?>">
 										<h1><?php echo $model_4['name'] ?></h1>
+										<p class="specifications">Характеристики:<br /> </p>
+										<p class="padding"> <?php echo $model_4['description']; ?> </p> 
 										<h2>Цена: <?php echo $model_4['price'] ?></h2>
 									</a>
 								</div>
@@ -192,6 +195,8 @@
 	 								<a href="<?php echo $model_3['link'] ?>"> 
 	 									<img src="<?php echo $model_3['image'] ?>">
 										<h1><?php echo $model_3['name'] ?></h1>
+										<p class="specifications">Характеристики:<br /> </p>
+										<p class="padding"> <?php echo $model_3['description']; ?> </p> 
 										<h2>Цена: <?php echo $model_3['price'] ?></h2>
 									</a>
 								</div>
@@ -217,6 +222,8 @@
 	 								<a href="<?php echo $model_5['link'] ?>"> 
 	 									<img src="<?php echo $model_5['image'] ?>">
 										<h1><?php echo $model_5['name'] ?></h1>
+										<p class="specifications">Характеристики:<br /> </p>
+										<p class="padding"> <?php echo $model_5['description']; ?> </p> 
 										<h2>Цена: <?php echo $model_5['price'] ?></h2>
 									</a>
 								</div>

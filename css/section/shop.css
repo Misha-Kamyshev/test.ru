@@ -57,6 +57,8 @@ div.product {
 	background-color: white;
 	border: solid 1px #FFF;
 	transition: 0.5s;
+	height: 514px;
+	width: 272px;
 }
 div.product:hover {
 	border: solid 1px #000;
@@ -68,6 +70,13 @@ div.product:hover {
 }
 .product h1 {
 	font-size: 22pt;
+	text-align: center;
+}
+p.specifications {
+	font-weight: bold;
+}
+p.padding {
+	padding-left: 2%;
 }
 .product h2 {
 	font-size: 17pt;
@@ -105,19 +114,6 @@ div.product:hover {
 		margin-left: 1%;
 		width: 82%;
 		min-width: 984px;
-	}
-	div.product {
-		height: 480px;
-		width: 272px;
-	}
-	.product h1 {
-		text-align: center;
-	}
-	p.specifications {
-		font-weight: bold;
-	}
-	p.padding {
-		padding-left: 2%;
 	}
 }
 
