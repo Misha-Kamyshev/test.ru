@@ -2,12 +2,7 @@
 <html>
 <head>
 <title><?= $title ?></title>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/section/index.css">
-    <link rel="stylesheet" type="text/css" href="css/section/about.css">
-    <link rel="stylesheet" type="text/css" href="css/section/bron.css">
-    <link rel="stylesheet" type="text/css" href="css/section/shop.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
 </head>

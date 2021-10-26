@@ -17,7 +17,7 @@
 
 
 
-			<div class="block_right">
+			<div class="right_block">
 				
 				<h1>План нашей работы</h1>
 
@@ -31,7 +31,7 @@
 
 
 
-			<div class="block_left">
+			<div class="left_block">
 
 				<h1>Бронирование замера по WhatApp:</h1>
 				<p>Тел: +7 999 999 99 99</p>
