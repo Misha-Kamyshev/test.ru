@@ -1,0 +1,45 @@
+<?php 
+	$title = 'Бронь СКД 24/7';
+
+	require('_header.php');
+?>
+
+
+<section>
+
+	<div class="conteiner">
+	
+		<div class="title">
+			<h1>Бронирование выезда замерщика</h1>
+		</div>
+
+		<div class="block_main">
+
+
+
+			<div class="block_right">
+				
+				<h1>План нашей работы</h1>
+
+				<ol class="plan">
+					<li>Осмотр места устоновки</li>
+					<li>Определение марки и мощьности кондиционера</li>
+					<li>Расчет скоимости (кондиционер + монтаж + расходный материал)</li>
+					<li>Выдача счета на оплату этой суммы</li>
+				</ol>
+			</div>
+
+
+
+			<div class="block_left">
+
+				<h1>Бронирование замера по WhatApp:</h1>
+				<p>Тел: +7 999 999 99 99</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<?php 
+	require('_footer.php');
+ ?>
