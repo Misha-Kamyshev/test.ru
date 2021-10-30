@@ -19,14 +19,14 @@
 					<li>Официальный дистрибьютор компании &#176;DAICHI с 04.04.2013</li>
 					<li>20 лет на рынке, с 2001 года;</li>
 					<li>Более 2600 довольных клиентов;</li>
-					<li>Гарантия после монатажа --- года;</li>
+					<li>Гарантия после монатажа 3 года;</li>
 					<li>Монтаж кондиционеров входит в стоимость кондиционера;</li>
 					<li>Бесплатный замер;</li>
 					<li>
 						Сертификаты: 
 						<ul class="img">
-							<li><a href="../images/certificate/daichi.jpg" data-fancybox="gallery" data-caption="Optional caption">&#176;DAICHI</a></li>
-							<li><a href="" data-fancybox="gallery" data-caption="Optional caption">Midea</a></li>
+							<li><a href="images/certificate/daichi.jpg" data-fancybox="gallery" data-caption="Optional caption">&#176;DAICHI</a></li>
+							<li><a href="images/certificate/midea.jpg" data-fancybox="gallery" data-caption="Optional caption">Midea</a></li>
 						</ul>
 					</li>
 				</ol>

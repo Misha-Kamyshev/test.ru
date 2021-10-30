@@ -278,10 +278,12 @@
 		border: solid 1px #DADADA;
 		background-color: #F7F7F7;
 	}
-
+	
 
 	@media (min-device-width: 1050px){
-
+		section {
+			min-height: calc(100vh - 350px);
+		}
 		.conteiner {
 			margin: auto;
 			width: 80%;
@@ -294,6 +296,9 @@
 	}
 
 	@media (max-device-width: 1050px){
+		section {
+			min-height: calc(100vh - 610px);
+		}
 		.conteiner {
 			margin: auto;
 			width: 90%;
@@ -336,8 +341,7 @@
 		}
 
 		.img a {
-			text-decoration: none;
-			color: black;
+			color: blue;
 			text-align: center;
 			width: 89px;
 			height: 25px;
@@ -345,6 +349,7 @@
 			transition: 0.5s;
 		}
 		.img a:hover {
+			color: black;
 			background-color: #44DBBD;
 			width: 100px;
 			display: block;
