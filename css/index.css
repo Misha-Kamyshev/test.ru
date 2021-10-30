@@ -312,7 +312,7 @@
 
 
 /*index.php*/
-	@media (min-device-width: 1050px){
+	@media (min-device-width: 1050px) {
 		.cervices h1 {
 			font-size: 25pt;
 			padding-left: 70px;
@@ -322,6 +322,14 @@
 			font-size: 18pt;
 		}
 	}
+	@media (max-device-width: 1050px) {
+		.cervices h1 {
+			font-size: 30pt;
+		}
+		.cervices ol {
+			font-size: 20pt;
+		}
+	}
 
 
 /*about.php*/
@@ -329,7 +337,7 @@
 		padding-top: 2px;
 	}
 
-	@media (min-device-width: 1050px){
+	@media (min-device-width: 1050px) {
 
 		.benefits h1 {
 			font-size: 23pt;
@@ -362,9 +370,11 @@
 	@media (max-device-width: 1050px){
 		.benefits h1 {
 			padding-left: 10%;
+			font-size: 32pt;
 		}
 		.benefits ol {
 			padding-left: 9%;
+			font-size: 23pt;
 		}
 		.img a {
 			text-decoration: none;
