@@ -20,15 +20,18 @@
 					<li>20 лет на рынке, с 2001 года;</li>
 					<li>Более 2600 довольных клиентов;</li>
 					<li>Гарантия после монатажа 3 года;</li>
-					<li>Монтаж кондиционеров входит в стоимость кондиционера;</li>
+					<li>Монтаж кондиционеров не входит в стоимость кондиционера;</li>
+					<li><a href="images/price.jpg" data-fancybox="gallery" data-caption="Optional caption">Прайс монтажа</a></li>
 					<li>Бесплатный замер;</li>
 					<li>
 						Сертификаты: 
 						<ul class="img">
-							<li><a href="images/certificate/daichi.jpg" data-fancybox="gallery" data-caption="Optional caption">&#176;DAICHI</a></li>
-							<li><a href="images/certificate/midea.jpg" data-fancybox="gallery" data-caption="Optional caption">Midea</a></li>
+							<li><a href="images/kentatsu.jpg" data-fancybox="gallery" data-caption="Optional caption">Kentatsu</a></li>
+							<!-- <li><a href="images/daikin.jpg" data-fancybox="gallery" data-caption="Optional caption">Daikin</a></li> -->
+							<li><a href="images/midea.jpg" data-fancybox="gallery" data-caption="Optional caption">Midea</a></li>
 						</ul>
 					</li>
+					<li><a href="images/.jpg" data-fancybox="gallery" data-caption="Optional caption">Морозильные камеры</a></li>
 				</ol>
 			</div>
 		</div>

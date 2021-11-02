@@ -15,7 +15,7 @@
 			<h1>О нас</h1>
 			<p>
 				Тел. +7 924 920 01 27 <br />
-				Адрес: г.Хабаровск ул.Ленина д.** офис ***
+				Адрес: г.Хабаровск ул.Георгиевская д.21 офис 107
 			</p>
 		</div>
 	</div>
@@ -39,5 +39,6 @@
       }
     });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>

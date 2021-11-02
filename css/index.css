@@ -1,8 +1,11 @@
-.conteiner:after, .block_main:after, .group_1:after, .DAICHI:after, .AXIOMA:after, .block_left:after, div:after, footer:after, footer div.conteiner:after {
-	content: "";
-	display: table;
-	clear: both;
-}
+/*:after*/
+	.conteiner:after, .block_main:after, .group_1:after, .DAICHI:after, .AXIOMA:after, .block_left:after, div:after, footer:after, footer div.conteiner:after, ul:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+
 /*header*/
 	div.logo {
 		float: left;
@@ -37,7 +40,6 @@
 			float: right;
 			margin: 0;	
 			padding: 0;
-
 			height: 70px;
 			min-width: 777px;
 			list-style-type: none;
@@ -494,7 +496,7 @@
 	.AXIOMA .firm {
 		margin-top: 70px;
 	}
-
+		
 	@media (min-device-width: 1540px) {
 		div.firm {
 			margin: 0 auto;
@@ -515,6 +517,25 @@
 			margin-left: 1%;
 			width: 82%;
 			min-width: 984px;
+		}
+		li#UP {
+			list-style-type: none;
+			width: 95px;
+			text-align: center;
+			background-color: #44DBBD;
+			transition: 0.3s;
+			border: solid 2px #44DBBD;
+			float: right;
+			margin-right: 30px;
+			margin-bottom: 10px;
+			margin-top: 15px;
+		}
+		a#UP {
+			color: #000;
+			font-size: 18pt;
+		}
+		li#UP:hover {
+			background-color: #F0F0F0;
 		}
 	}
 

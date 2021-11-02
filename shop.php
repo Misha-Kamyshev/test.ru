@@ -6,11 +6,12 @@
 	$bosch  	= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'bosch'");
 	$kentatsu = mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'kentatsu'");
 	$midea  	= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'midea'");
+	$used			= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'used'");
 
 	$title = 'Каталог СКД24/7';
 
 	require('_header.php');
-?>
+	?>
 
 
 
@@ -25,7 +26,6 @@
 		<div class="block_main">
 
 			<div class="block_left">
-
 				<div class="PC">
 					<h3>Бренды</h3>
 					<ul>
@@ -34,10 +34,12 @@
 						<li> <a href="#KENTATSU">Kentatsu</a> </li>
 						<li> <a href="#BOSCH">BOSCH</a> </li>
 						<li> <a href="#MIDEA">Midea</a> </li>
+						<li> <a href="#used">Б/У</a> </li>
+						<li id="UP"> <a href="#" id="UP">НАВЕРХ</a> </li>
 					</ul>
 				</div>
 			</div>
-				
+
 
 			<div class="block_right">
 
@@ -189,13 +191,40 @@
 						}
 					?>
 				</div>
+
+			<!-- Б/У -->
+				<div class="used">
+					
+					<div class="firm">
+						<div id="used">
+							<h2>Б/У</h2>
+						</div>
+					</div>
+
+					<?php
+						while($model_6 = mysqli_fetch_assoc($used)) 
+						{
+							?>
+							<div class="product">
+ 								<a href="<?php echo $model_6['link'] ?>"> 
+ 									<img src="<?php echo $model_6['image'] ?>">
+									<h1><?php echo $model_6['name'] ?></h1>
+									<p class="specifications">Характеристики:<br /> </p>
+									<p class="padding"> <?php echo $model_6['description']; ?> </p> 
+									<h2>Цена: <?php echo $model_6['price'] ?></h2>
+								</a>
+							</div>
+							<?php
+						}
+					?>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
 
-<script> 
+<script>
   function mFunction() {
       document.getElementById("myDropdown_2").classList.toggle("show");
   }
@@ -217,4 +246,4 @@
 
 <?php 
 	require('_footer.php');
- ?>
+	?>
