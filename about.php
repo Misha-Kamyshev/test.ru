@@ -34,6 +34,10 @@
 					<li><a href="images/.jpg" data-fancybox="gallery" data-caption="Optional caption">Морозильные камеры</a></li>
 				</ol>
 			</div>
+
+			<div class="video">
+				<iframe src="https://www.youtube.com/embed/XPlaEVk7RuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 		</div>
 	</div>
 </section>

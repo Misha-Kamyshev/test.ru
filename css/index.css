@@ -367,6 +367,12 @@
 			border: solid 2px #44DBBD;
 			border-radius: 3px;
 		}
+		.video iframe {
+			width: 560px;
+			height: 315px;
+			float: right;
+			margin: 1%;
+		}
 	}
 
 	@media (max-device-width: 1050px){
