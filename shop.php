@@ -35,7 +35,6 @@
 						<li> <a href="#BOSCH">BOSCH</a> </li>
 						<li> <a href="#MIDEA">Midea</a> </li>
 						<li> <a href="#used">Б/У</a> </li>
-						<li id="UP"> <a href="#" id="UP">НАВЕРХ</a> </li>
 					</ul>
 				</div>
 			</div>
@@ -220,6 +219,14 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="fixed_top">
+		<a href="#" class="top">
+			<div>
+				<p>&uarr;</p>
+			</div>
+		</a>
 	</div>
 </section>
 

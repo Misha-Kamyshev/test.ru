@@ -502,7 +502,7 @@
 	.AXIOMA .firm {
 		margin-top: 70px;
 	}
-		
+			
 	@media (min-device-width: 1540px) {
 		div.firm {
 			margin: 0 auto;
@@ -524,24 +524,28 @@
 			width: 82%;
 			min-width: 984px;
 		}
-		li#UP {
-			list-style-type: none;
-			width: 95px;
+		/*Кнопка наверх*/
+		div.fixed_top {
+			position: fixed;
+			bottom: 3%;
+			right: 3%;
+		}
+		a.top {
+			text-decoration: none;
+		}
+		.top div {
+			background-color: #CDCDCD;
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
 			text-align: center;
-			background-color: #44DBBD;
-			transition: 0.3s;
-			border: solid 2px #44DBBD;
-			float: right;
-			margin-right: 30px;
-			margin-bottom: 10px;
-			margin-top: 15px;
+			vertical-align: middle;
 		}
-		a#UP {
-			color: #000;
-			font-size: 18pt;
-		}
-		li#UP:hover {
-			background-color: #F0F0F0;
+		.top p {
+			font-size: 40pt;
+			margin: 0;
+			padding-top: 15%;
+			color: black;
 		}
 	}
 
@@ -564,7 +568,7 @@
 		}
 		
 
-		/*Кнопка*/
+		/*Кнопка бренды*/
 		.mobile {
 			margin-left: 1%;
 			margin-top: 2%;
@@ -605,5 +609,30 @@
 
 		.show {
 			display: block;
+		}
+
+
+		/*Кнопка наверх*/
+		div.fixed_top {
+			position: fixed;
+			bottom: 3%;
+			right: 5%;
+		}
+		a.top {
+			text-decoration: none;
+		}
+		.top div {
+			background-color: #CDCDCD;
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.top p {
+			font-size: 65pt;
+			margin: 0;
+			padding-top: 10%;
+			color: black;
 		}
 	}
