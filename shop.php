@@ -221,8 +221,8 @@
 		</div>
 	</div>
 
-	<div class="fixed_top">
-		<a href="#" class="top">
+	<div class="top">
+		<a href="#">
 			<div>
 				<p>&uarr;</p>
 			</div>

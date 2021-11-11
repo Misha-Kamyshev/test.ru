@@ -502,6 +502,9 @@
 	.AXIOMA .firm {
 		margin-top: 70px;
 	}
+	.top a {
+		text-decoration: none;
+	}
 			
 	@media (min-device-width: 1540px) {
 		div.firm {
@@ -524,30 +527,35 @@
 			width: 82%;
 			min-width: 984px;
 		}
+
+
 		/*Кнопка наверх*/
-		div.fixed_top {
-			position: fixed;
-			bottom: 3%;
-			right: 3%;
-		}
-		a.top {
-			text-decoration: none;
-		}
-		.top div {
-			background-color: #CDCDCD;
-			border-radius: 50%;
-			width: 100px;
-			height: 100px;
-			text-align: center;
-			vertical-align: middle;
-		}
-		.top p {
-			font-size: 40pt;
-			margin: 0;
-			padding-top: 15%;
-			color: black;
-		}
+			div.top {
+				position: fixed;
+				bottom: 3%;
+				right: 3%;
+			}
+			
+			.top div {
+				background-color: #CDCDCD;
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+				text-align: center;
+				vertical-align: middle;
+				transition: 0.2s;
+			}
+			.top div:hover {
+				background-color: #A1A1A1;
+			}
+			.top p {
+				font-size: 40pt;
+				margin: 0;
+				padding-top: 15%;
+				color: black;
+			}
 	}
+
 
 	@media (max-device-width: 1539px) {
 		.PC {
@@ -569,70 +577,68 @@
 		
 
 		/*Кнопка бренды*/
-		.mobile {
-			margin-left: 1%;
-			margin-top: 2%;
-			float: left;
-			display: inline-block;
-		}
+			.mobile {
+				margin-left: 1%;
+				margin-top: 2%;
+				float: left;
+				display: inline-block;
+			}
 
-		.brand {
-			background-color: #2F2E2E;
-			transition: 0.5s;
-			color: white;
-			padding: 10px;
-			font-size: 20pt;
-			cursor: pointer;
-		}
+			.brand {
+				background-color: #2F2E2E;
+				transition: 0.5s;
+				color: white;
+				padding: 10px;
+				font-size: 20pt;
+				cursor: pointer;
+			}
 
-		.brand-links {
-			display: none;
-			position: absolute;
-			background-color: #FFF;
-			min-width: 200px;
-			overflow: auto;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			
-		}
+			.brand-links {
+				display: none;
+				position: absolute;
+				background-color: #FFF;
+				min-width: 200px;
+				overflow: auto;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				
+			}
 
-		.brand-links a {
-			color: black;
-			padding: 12px 16px;
-			text-decoration: none;
-			display: block;
-			font-size: 20pt;
-		}
+			.brand-links a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				font-size: 20pt;
+			}
 
-		.mobile a:hover {
-			background-color: #ddd;
-		}
+			.mobile a:hover {
+				background-color: #ddd;
+			}
 
-		.show {
-			display: block;
-		}
+			.show {
+				display: block;
+			}
 
 
 		/*Кнопка наверх*/
-		div.fixed_top {
-			position: fixed;
-			bottom: 3%;
-			right: 5%;
-		}
-		a.top {
-			text-decoration: none;
-		}
-		.top div {
-			background-color: #CDCDCD;
-			border-radius: 50%;
-			width: 150px;
-			height: 150px;
-			text-align: center;
-			vertical-align: middle;
-		}
-		.top p {
-			font-size: 65pt;
-			margin: 0;
-			padding-top: 10%;
-			color: black;
-		}
+			div.top {
+				position: fixed;
+				bottom: 3%;
+				right: 5%;
+			}
+			
+			.top div {
+				background-color: #CDCDCD;
+				border-radius: 50%;
+				width: 150px;
+				height: 150px;
+				text-align: center;
+				vertical-align: middle;
+			}
+			.top p {
+				font-size: 65pt;
+				margin: 0;
+				padding-top: 10%;
+				color: black;
+			}
 	}
