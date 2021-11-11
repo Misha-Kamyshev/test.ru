@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?= $title ?></title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+
 </head>
 <body>
 
@@ -19,14 +23,14 @@
         </div>
 
         <div class="links">
-            <ul>
-                <div>
+            <div>
+                <ul>
                     <li class="shop"> <a href="bron.php">БРОНИРОВАНИЕ</a> </li>
                     <li class="shop"> <a href="shop.php">КАТАЛОГ</a> </li>
                     <li> <a href="about.php">О НАС</a> </li>
                     <li> <a href="index.php">ГЛАВНАЯ</a> </li>
-                </div>
-            </ul>
+                </ul>
+            </div>
         </div>
 
         <div class="dropdown">
