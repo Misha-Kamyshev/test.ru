@@ -512,6 +512,10 @@
 	.top a {
 		text-decoration: none;
 	}
+	div.no {
+		margin-left: 2%;
+		margin-bottom: 2%;
+	}
 			
 	@media (min-device-width: 1540px) {
 		div.firm {

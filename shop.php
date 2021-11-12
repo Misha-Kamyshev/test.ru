@@ -11,6 +11,14 @@
 	$title = 'Каталог СКД24/7';
 
 	require('_header.php');
+
+	// $daichi 		= 0;
+	// $axioma		= 0;
+	// $bosch			= 0;
+	// $kentatsu	= 0;
+	// $midea			= 0;
+	$used					= 0;
+
 	?>
 
 
@@ -64,21 +72,38 @@
 							<h2>&#176;DAICHI</h2>
 						</div>
 					</div>
-				
-					<?php 
-						while($model_1 = mysqli_fetch_assoc($daichi))
-						{
-							?>
-							<div class="product">
- 								<a href="<?php echo $model_1['link']; ?>"> 
- 									<img src="<?php echo $model_1['image']; ?>">
-									<h1> <?php echo $model_1['name']; ?></h1>
-									<p class="specifications">Характеристики:<br /> </p>
-									<p class="padding"> <?php echo $model_1['description']; ?> </p> 
-									<h2>Цена: <?php echo $model_1['price']; ?></h2>
-								</a>
+
+					<?php
+						if ($daichi == '0') {
+						?>
+							<div class="no">
+								<h1>Нет в наличии</h1>
 							</div>
-							<?php 
+						<?php 
+						}
+						else {				
+							while($model_1 = mysqli_fetch_assoc($daichi)) {
+								?>
+								<div class="product">
+	 								<a href="<?php echo $model_1['link']; ?>"> 
+	 									<img src="<?php echo $model_1['image']; ?>">
+										<h1> <?php echo $model_1['name']; ?></h1>
+										<p class="specifications">Характеристики:<br /> </p>
+										<p class="padding"> <?php echo $model_1['description']; ?> </p> 
+										<h2>
+											<?php
+											if ($model_1['price'] == 'Нет в наличии') {
+												echo $model_1['price'];
+											}
+											else {
+											?>
+											Цена: <?php echo $model_1['price']; ?> руб.
+											<?php } ?>
+										</h2>
+									</a>
+								</div>
+								<?php 
+							}
 						}
 					?>
 				</div>
@@ -93,19 +118,36 @@
 					</div>
 
 					<?php 
-						while($model_2 = mysqli_fetch_assoc($axioma)) 
-						{
-							?>
-							<div class="product">
- 								<a href="<?php echo $model_2['link'] ?>"> 
- 									<img src="<?php echo $model_2['image'] ?>">
-									<h1><?php echo $model_2['name'] ?></h1>
-									<p class="specifications">Характеристики:<br /> </p>
-									<p class="padding"> <?php echo $model_2['description']; ?> </p> 
-									<h2>Цена: <?php echo $model_2['price'] ?></h2>
-								</a>
+						if ($axioma == '0') {
+						?>
+							<div class="no">
+								<h1>Нет в наличии</h1>
 							</div>
-							<?php
+						<?php 
+						}
+						else {
+							while($model_2 = mysqli_fetch_assoc($axioma)) {
+								?>
+								<div class="product">
+	 								<a href="<?php echo $model_2['link'] ?>"> 
+	 									<img src="<?php echo $model_2['image'] ?>">
+										<h1><?php echo $model_2['name'] ?></h1>
+										<p class="specifications">Характеристики:<br /> </p>
+										<p class="padding"> <?php echo $model_2['description']; ?> </p> 
+										<h2>
+											<?php
+											if ($model_2['price'] == 'Нет в наличии') {
+												echo $model_2['price'];
+											}
+											else {
+											?>
+											Цена: <?php echo $model_2['price']; ?> руб.
+											<?php } ?>
+										</h2>
+									</a>
+								</div>
+								<?php
+							}
 						}
 					?>
 				</div>
@@ -120,19 +162,37 @@
 					</div>
 
 					<?php 
-						while($model_4 = mysqli_fetch_assoc($bosch)) 
-						{
-							?>
-							<div class="product">
- 								<a href="<?php echo $model_4['link'] ?>"> 
- 									<img src="<?php echo $model_4['image'] ?>">
-									<h1><?php echo $model_4['name'] ?></h1>
-									<p class="specifications">Характеристики:<br /> </p>
-									<p class="padding"> <?php echo $model_4['description']; ?> </p> 
-									<h2>Цена: <?php echo $model_4['price'] ?></h2>
-								</a>
+						if ($bosch == '0') {
+						?>
+							<div class="no">
+								<h1>Нет в наличии</h1>
 							</div>
-							<?php
+						<?php 
+						}
+						else {
+							while($model_3 = mysqli_fetch_assoc($bosch)) 
+							{
+								?>
+								<div class="product">
+	 								<a href="<?php echo $model_3['link'] ?>"> 
+	 									<img src="<?php echo $model_3['image'] ?>">
+										<h1><?php echo $model_3['name'] ?></h1>
+										<p class="specifications">Характеристики:<br /> </p>
+										<p class="padding"> <?php echo $model_3['description']; ?> </p> 
+										<h2>
+											<?php
+											if ($model_3['price'] == 'Нет в наличии') {
+												echo $model_3['price'];
+											}
+											else {
+											?>
+											Цена: <?php echo $model_3['price']; ?> руб.
+											<?php } ?>
+										</h2>
+									</a>
+								</div>
+								<?php
+							}
 						}
 					?>
 				</div>
@@ -147,19 +207,37 @@
 					</div>
 
 					<?php 
-						while($model_3 = mysqli_fetch_assoc($kentatsu)) 
-						{
-							?>
-							<div class="product">
- 								<a href="<?php echo $model_3['link'] ?>"> 
- 									<img src="<?php echo $model_3['image'] ?>">
-									<h1><?php echo $model_3['name'] ?></h1>
-									<p class="specifications">Характеристики:<br /> </p>
-									<p class="padding"> <?php echo $model_3['description']; ?> </p> 
-									<h2>Цена: <?php echo $model_3['price'] ?></h2>
-								</a>
+					if ($kentatsu == '0') {
+						?>
+							<div class="no">
+								<h1>Нет в наличии</h1>
 							</div>
-							<?php
+						<?php 
+						}
+						else {
+							while($model_4 = mysqli_fetch_assoc($kentatsu)) 
+							{
+								?>
+								<div class="product">
+	 								<a href="<?php echo $model_4['link'] ?>"> 
+	 									<img src="<?php echo $model_4['image'] ?>">
+										<h1><?php echo $model_4['name'] ?></h1>
+										<p class="specifications">Характеристики:<br /> </p>
+										<p class="padding"> <?php echo $model_4['description']; ?> </p> 
+										<h2>
+											<?php
+											if ($model_4['price'] == 'Нет в наличии') {
+												echo $model_4['price'];
+											}
+											else {
+											?>
+											Цена: <?php echo $model_4['price']; ?> руб.
+											<?php } ?>
+										</h2>
+									</a>
+								</div>
+								<?php
+							}
 						}
 					?>
 				</div>
@@ -174,19 +252,37 @@
 					</div>
 
 					<?php 
-						while($model_5 = mysqli_fetch_assoc($midea)) 
-						{
-							?>
-							<div class="product">
- 								<a href="<?php echo $model_5['link'] ?>"> 
- 									<img src="<?php echo $model_5['image'] ?>">
-									<h1><?php echo $model_5['name'] ?></h1>
-									<p class="specifications">Характеристики:<br /> </p>
-									<p class="padding"> <?php echo $model_5['description']; ?> </p> 
-									<h2>Цена: <?php echo $model_5['price'] ?></h2>
-								</a>
+						if ($midea == '0') {
+						?>
+							<div class="no">
+								<h1>Нет в наличии</h1>
 							</div>
-							<?php
+						<?php 
+						}
+						else {
+							while($model_5 = mysqli_fetch_assoc($midea)) 
+							{
+								?>
+								<div class="product">
+	 								<a href="<?php echo $model_5['link'] ?>"> 
+	 									<img src="<?php echo $model_5['image'] ?>">
+										<h1><?php echo $model_5['name'] ?></h1>
+										<p class="specifications">Характеристики:<br /> </p>
+										<p class="padding"> <?php echo $model_5['description']; ?> </p> 
+										<h2>
+											<?php
+											if ($model_5['price'] == 'Нет в наличии') {
+												echo $model_5['price'];
+											}
+											else {
+											?>
+											Цена: <?php echo $model_5['price']; ?> руб.
+											<?php } ?>
+										</h2>
+									</a>
+								</div>
+								<?php
+							}
 						}
 					?>
 				</div>
@@ -201,19 +297,36 @@
 					</div>
 
 					<?php
-						while($model_6 = mysqli_fetch_assoc($used)) 
-						{
-							?>
-							<div class="product">
- 								<a href="<?php echo $model_6['link'] ?>"> 
- 									<img src="<?php echo $model_6['image'] ?>">
-									<h1><?php echo $model_6['name'] ?></h1>
-									<p class="specifications">Характеристики:<br /> </p>
-									<p class="padding"> <?php echo $model_6['description']; ?> </p> 
-									<h2>Цена: <?php echo $model_6['price'] ?></h2>
-								</a>
+						if ($used == '0') { 
+						?>
+							<div class="no">
+								<h1>Нет в наличии</h1>
 							</div>
-							<?php
+						<?php
+						}
+						else {
+							while($model_6 = mysqli_fetch_assoc($used)) {
+								?>
+								<div class="product">
+	 								<a href="<?php echo $model_6['link'] ?>"> 
+	 									<img src="<?php echo $model_6['image'] ?>">
+										<h1><?php echo $model_6['name'] ?></h1>
+										<p class="specifications">Характеристики:<br /> </p>
+										<p class="padding"> <?php echo $model_6['description']; ?> </p> 
+										<h2>
+											<?php
+											if ($model_6['price'] == 'Нет в наличии') {
+												echo $model_6['price'];
+											}
+											else {
+											?>
+											Цена: <?php echo $model_6['price']; ?> руб.
+											<?php } ?>
+										</h2>
+									</a>
+								</div>
+								<?php
+							}
 						}
 					?>
 				</div>
