@@ -19,7 +19,7 @@
 					<li>Официальный дистрибьютор компании &#176;DAICHI с 04.04.2013</li>
 					<li>20 лет на рынке, с 2001 года;</li>
 					<li>Более 2600 довольных клиентов;</li>
-					<li>Гарантия после монатажа 3 года;</li>
+					<li>Гарантия после монтажа 3 года;</li>
 					<li>Монтаж кондиционеров не входит в стоимость кондиционера;</li>
 					<li><a href="images/price.jpg" data-fancybox="gallery" data-caption="Optional caption">Прайс монтажа</a></li>
 					<li>Бесплатный замер;</li>
@@ -33,6 +33,14 @@
 					</li>
 					<li><a href="images/.jpg" data-fancybox="gallery" data-caption="Optional caption">Морозильные камеры</a></li>
 				</ol>
+			</div>
+
+			<div class="contact">
+				<h1>Наши контакты</h1>
+				<ul>
+					<li>Телефон: +7 924 920 01 27</li>
+					<li>Адрес: г.Хабаровск ул.Георгиевская д.21 офис 107</li>
+				</ul>
 			</div>
 
 			<div class="video">

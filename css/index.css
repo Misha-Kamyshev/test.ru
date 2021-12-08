@@ -1,5 +1,5 @@
 /*:after*/
-	.conteiner:after, .block_main:after, .group_1:after, .DAICHI:after, .AXIOMA:after, .block_left:after, div:after, footer:after, footer div.conteiner:after, ul:after {
+	.conteiner:after, .block_main:after, .block_left:after, ul:after {
 		content: "";
 		display: table;
 		clear: both;
@@ -348,6 +348,10 @@
 
 	@media (min-device-width: 1050px) {
 
+		div.benefits {
+			float: left;
+			width: 50%;
+		}
 		.benefits h1 {
 			font-size: 23pt;
 			padding-left: 70px;
@@ -374,11 +378,22 @@
 			border: solid 2px #44DBBD;
 			border-radius: 3px;
 		}
+		div.contact {
+			width: 51%;
+			float: left;
+		}
+		.contact h1{
+			font-size: 23pt;
+			padding-left: 70px;
+		}
+		.contact li {
+			font-size: 17pt;
+		}
 		.video iframe {
 			width: 560px;
 			height: 315px;
 			float: right;
-			margin: 1%;
+			margin: 2%;
 		}
 	}
 
@@ -410,6 +425,21 @@
 		}
 		.img a:active {
 			color: red;
+		}
+		.contact h1 {
+			padding-left: 10%;
+			font-size: 32pt;
+		}
+		div.video {
+			margin: 0 auto;
+			width: 700px;
+			height: 394px;
+		}
+		.video iframe {
+			width: 700px;
+			height: 394px;
+			/*float: right;*/
+			margin: auto;
 		}
 	}
 
