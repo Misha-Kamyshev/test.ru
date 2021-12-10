@@ -1,7 +1,7 @@
 ﻿<?php 
 	$title = 'СКД 24/7';
 
-	require ('_header.php');
+	require ('php/_header.php');
 ?>
 
 
@@ -30,5 +30,5 @@
 
 
 <?php 
-	require('_footer.php');
+	require('php/_footer.php');
  ?>

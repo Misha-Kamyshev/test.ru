@@ -1,16 +1,10 @@
 ﻿<?php
-	require('connect.php');
 
-	$daichi 	= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'daichi'");
-	$axioma 	= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'axioma'");
-	$bosch  	= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'bosch'");
-	$kentatsu = mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'kentatsu'");
-	$midea  	= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'midea'");
-	$used			= mysqli_query($BD, "SELECT * FROM `brand` WHERE brand_id = 'used'");
+	require('php/connect.php');
 
 	$title = 'Каталог СКД24/7';
 
-	require('_header.php');
+	require('php/_header.php');
 
 	// $daichi 		= 0;
 	// $axioma		= 0;
@@ -19,7 +13,7 @@
 	// $midea			= 0;
 	$used					= 0;
 
-	?>
+?>
 
 
 
@@ -85,7 +79,7 @@
 							while($model_1 = mysqli_fetch_assoc($daichi)) {
 								?>
 								<div class="product">
-	 								<a href="<?php echo $model_1['link']; ?>"> 
+	 								<a href="/product.php?product_id=<?=$model_1['id'];?>"> 
 	 									<img src="<?php echo $model_1['image']; ?>">
 										<h1> <?php echo $model_1['name']; ?></h1>
 										<p class="specifications">Характеристики:<br /> </p>
@@ -365,5 +359,5 @@
 
 
 <?php 
-	require('_footer.php');
-	?>
+	require('php/_footer.php');
+?>

@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title><?= $title ?></title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
-
 
 </head>
 <body>
