@@ -1,5 +1,5 @@
 /*:after*/
-	.conteiner:after, .block_main:after, .block_left:after, ul:after {
+	.conteiner:after, .block_main:after, .block_left:after, ul:after, .DAICHI:after, .AXIOMA:after, .BOSCH:after, .KENTATSU:after, .MIDEA:after, .used:after {
 		content: "";
 		display: table;
 		clear: both;
@@ -167,10 +167,6 @@
 		.dropdown a:hover {
 			background-color: #ddd;
 		}
-
-		.show {
-			display: block;
-		}
 	}
 
 
@@ -201,10 +197,6 @@
 		float: left;
 		width: 33%;
 	}
-
-
-
-
 
 	@media (min-device-width: 1050px) {
 
@@ -536,6 +528,10 @@
 		font-size: 17pt;
 		float: right;
 	}
+	.img_product {
+		width: 270px;
+		height: 203px;
+	}
 	.firm {
 		margin-top: 70px;
 	}
@@ -684,4 +680,137 @@
 			}
 	}
 /*product.php*/
+	@media (max-device-width: 1220px) {
+		.button_back {
+			display: none;
+		}
+	}
+	.button_back {
+		position: absolute;
+		top: 210px;
+		left: 12%;
+		background-color: white;
+		border: solid 2px black;
+		border-radius: 5px;
+		height: 30px;
+		width: 75px;
+		font-size: 12pt;
+		transition: 0.5s;
+		font-weight: bold;
+	}
+	.button_back:hover {
+		background-color: #44DBBD;
+	}
+	/*slider*/
+		.slider {
+			max-width: 430px;
+			margin: auto;
+		}
+
+		.block_slider .previous, .block_slider .next {
+			/* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+			cursor: pointer;
+			/* Положение элемента задаётся относительно границ браузера: */
+			position: absolute;
+			top: 50%;
+			width: auto;
+			margin-top: -33px;
+			padding: 16px;
+			/* Оформление самих кнопок: */
+			color: black;
+			font-weight: bold;
+			font-size: 16pt;
+			/* Плавное появление фона при наведении курсора: */
+			transition: 0.6s ease;
+		}
+
+		.block_slider .previous {
+			/*left: -17%;*/
+		}
+
+		.block_slider .next {
+			right: 0;
+		}
+
+		/* При наведении курсора на кнопки добавляем фон кнопок: */
+		.block_slider .previous:hover, .block_slider .next:hover {
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+
+		/* Анимация слайдов: */
+		.item {
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+			/* Устанавливаем и изменяем степень прозрачности: */
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
 	
+	.block_slider {
+		margin: 5% auto 0 10%;
+		width: 520px;
+		background-color: white;
+		position: relative;
+		float: left;
+	}
+
+	.img_big {
+		width: 430px;
+		height: 323px;
+	}
+	/*button_power*/
+		.button_power {
+			position: relative;
+			display: inline-block;
+			left: 120px;
+			top: 76px;
+		}
+		.button_power p {
+			margin: 0 0 10px 0;
+		}
+
+		.power_links /*button*/ {
+			background-color: white;
+			border-radius: 5px;
+			height: 35px;
+			width: 220px;
+			text-align: left;
+			text-indent: 10px;
+		}
+
+		.power {
+			display: none;
+			position: absolute;
+			left: 2px;
+			width: 215px;
+			top: 68px;
+			background-color: white;
+			height: auto;
+			box-shadow: 1px 3px 10px rgba(30, 30, 30, 0.8);
+		}
+		.power a {
+			padding: 5px 0 5px 15px;
+			position: relative;
+			display: block;
+			color: black;
+			text-decoration: none;
+		}
+		.power a:hover {
+			background-color: #DDDDDD;
+		}
+		.show {
+			display: block;
+		}
+
+	.price {
+		font-size: 20pt;
+		font-weight: bold;
+		display: none;
+	}
