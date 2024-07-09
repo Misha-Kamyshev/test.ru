@@ -1,13 +1,13 @@
 <?php
 
 	require 'php/connect.php';
-
+	
 	$proudct_id = $_GET['product_id'];
-	$product_class = $_GET['product_class'];
-	if (!is_numeric($proudct_id) or !is_numeric($product_class)) exit();
+	// $product_class = $_GET['product_class'];
+	if (!is_numeric($proudct_id)/* or !is_numeric($product_class)*/) exit();
 	$result = mysqli_query($BD, "SELECT * FROM `brand` WHERE id = ".$proudct_id);
 	$product = mysqli_fetch_assoc($result);
-
+	
 	$title = 'Коондиционер '.$product['name'];
 	require 'php/_header.php';
 ?>
@@ -30,7 +30,7 @@
 					<a class="next" onclick="nextSlide()">&#10095;</a>
 				<div class="slider">
 					<div class="item">
-						<img class="img_big" src="<?echo $product['image_0'];?>">
+						<img class="img_big" src="<?echo $product['image'];?>">
 					</div>
 
 					<div class="item">

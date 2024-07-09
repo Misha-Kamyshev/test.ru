@@ -8,10 +8,10 @@
 
 	// $daichi 		= 0;
 	// $axioma		= 0;
-	// $bosch			= 0;
+	// $bosch		= 0;
 	// $kentatsu	= 0;
-	// $midea			= 0;
-	$used					= 0;
+	// $midea		= 0;
+	$used		= 0;
 
 ?>
 
@@ -78,9 +78,10 @@
 						else {				
 							while($model_1 = mysqli_fetch_assoc($daichi)) {
 								?>
+								<!-- &product_class=<?=$model_1['class'];?> -->
 								<div class="product">
-	 								<a href="/product.php?product_id=<?=$model_1['id'];?>&product_class=<?=$model_1['class'];?>"> 
-	 									<img class="img_product" src="<?php echo $model_1['image_0']; ?>">
+	 								<a href="/product.php?product_id=<?=$model_1['id'];?>"> 
+	 									<img class="img_product" src="<?php echo $model_1['image']; ?>">
 										<h1> <?php echo $model_1['name']; ?></h1>
 										<p class="specifications">Характеристики:<br /> </p>
 										<p class="padding"> <?php echo $model_1['description']; ?> </p> 
@@ -124,7 +125,7 @@
 								?>
 								<div class="product">
 	 								<a href="<?php echo $model_2['link'] ?>"> 
-	 									<img class="img_product" src="<?php echo $model_2['image_0'] ?>">
+	 									<img class="img_product" src="<?php echo $model_2['image'] ?>">
 										<h1><?php echo $model_2['name'] ?></h1>
 										<p class="specifications">Характеристики:<br /> </p>
 										<p class="padding"> <?php echo $model_2['description']; ?> </p> 
@@ -169,7 +170,7 @@
 								?>
 								<div class="product">
 	 								<a href="<?php echo $model_3['link'] ?>"> 
-	 									<img class="img_product" src="<?php echo $model_3['image_0'] ?>">
+	 									<img class="img_product" src="<?php echo $model_3['image'] ?>">
 										<h1><?php echo $model_3['name'] ?></h1>
 										<p class="specifications">Характеристики:<br /> </p>
 										<p class="padding"> <?php echo $model_3['description']; ?> </p> 
@@ -214,7 +215,7 @@
 								?>
 								<div class="product">
 	 								<a href="<?php echo $model_4['link'] ?>"> 
-	 									<img class="img_product" src="<?php echo $model_4['image_0'] ?>">
+	 									<img class="img_product" src="<?php echo $model_4['image'] ?>">
 										<h1><?php echo $model_4['name'] ?></h1>
 										<p class="specifications">Характеристики:<br /> </p>
 										<p class="padding"> <?php echo $model_4['description']; ?> </p> 
@@ -259,7 +260,7 @@
 								?>
 								<div class="product">
 	 								<a href="<?php echo $model_5['link'] ?>"> 
-	 									<img class="img_product" src="<?php echo $model_5['image_0'] ?>">
+	 									<img class="img_product" src="<?php echo $model_5['image'] ?>">
 										<h1><?php echo $model_5['name'] ?></h1>
 										<p class="specifications">Характеристики:<br /> </p>
 										<p class="padding"> <?php echo $model_5['description']; ?> </p> 
@@ -303,7 +304,7 @@
 								?>
 								<div class="product">
 	 								<a href="<?php echo $model_6['link'] ?>"> 
-	 									<img class="img_product" src="<?php echo $model_6['image_0'] ?>">
+	 									<img class="img_product" src="<?php echo $model_6['image'] ?>">
 										<h1><?php echo $model_6['name'] ?></h1>
 										<p class="specifications">Характеристики:<br /> </p>
 										<p class="padding"> <?php echo $model_6['description']; ?> </p> 
